@@ -277,6 +277,31 @@ Hide/Show table of contents
 
    **[⬆ Back to Top](#table-of-contents)**
 
+9. ### What is Docker Compose?
+
+     Docker Compose is a tool for defining and running multi-container Docker applications using a YAML file (`docker-compose.yml`). It allows you to configure services, networks, and volumes in one place, and start everything with a single command.
+
+     Key benefits of Docker Compose:
+     1. Manage multiple services in a single configuration
+     2. Reproducible local development environments
+     3. Easy startup and shutdown of complete application stacks
+
+     Example of a simple Docker Compose file:
+     ```yaml
+     version: '3.8'
+     services:
+         web:
+             image: nginx:latest
+             ports:
+                 - "80:80"
+         app:
+             build: .
+             depends_on:
+                 - web
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
 ## Kubernetes
 
 11. ### What is Kubernetes?
