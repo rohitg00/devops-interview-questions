@@ -324,6 +324,8 @@ Hide/Show table of contents
 
 ## CI/CD
 
+> 📄 See also: [CI/CD Scenario-Based Questions](./CI-CD-Scenarios.md)
+
 16. ### What is CI/CD Pipeline?
 
     A CI/CD Pipeline is a series of steps that must be performed in order to deliver a new version of software. A pipeline typically includes stages for:
