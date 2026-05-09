@@ -507,6 +507,24 @@ Hide/Show table of contents
 
     **[⬆ Back to Top](#table-of-contents)**
 
+29. ### What is the difference between Ansible and Terraform?
+
+    | Feature | Ansible | Terraform |
+    |---|---|---|
+    | **Primary Use** | Configuration Management | Infrastructure Provisioning |
+    | **Language** | YAML (Playbooks) | HCL (HashiCorp Configuration Language) |
+    | **State Management** | Stateless | Stateful (`.tfstate` file) |
+    | **Agentless** | Yes | Yes |
+    | **Approach** | Procedural | Declarative |
+    | **Best For** | App config, package install | Provisioning cloud infra |
+
+    - **Ansible** configures existing servers — installs packages, manages users, deploys apps.
+    - **Terraform** provisions infrastructure — creates EC2 instances, VPCs, S3 buckets.
+    - Terraform tracks state via a state file; Ansible is stateless.
+    - They are **complementary**: Terraform provisions the server, Ansible configures it.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
 ## Monitoring and Logging
 
 31. ### What is monitoring in DevOps?
